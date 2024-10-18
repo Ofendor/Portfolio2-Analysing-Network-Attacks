@@ -15,6 +15,8 @@
 
 <pre><code style="color: #ff3f31;">Portfolio Activity 2 - TCP protocol and Wireshark log analysis</code></pre>
 
+In this project, I used the information learned about common network attacks
+
 <p style="font-size: 12px; font-style: italic; color: #4a4a4a;">
   All portfolio items represent fictional companies, IP addresses, websites, and emails, used strictly for educational purposes; and provided hands-on experience in real-world cybersecurity practices.  
 </p>
