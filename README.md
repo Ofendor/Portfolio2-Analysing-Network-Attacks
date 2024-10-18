@@ -1,7 +1,7 @@
 <a href="https://www.linkedin.com/in/emilio-mardones" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Badge" width="24" height="24" />
 </a>
-<a href="https://ofendor.github.io/mimard_profile.github.io/" target="_blank">
+<a href="https://ofendor.github.io/portfolio1/" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Badge" width="24" height="24" />
 </a>
 <a href="https://coursera.org/share/38ab1d68036cb56bc093082ab335d0c1" target="_blank">
