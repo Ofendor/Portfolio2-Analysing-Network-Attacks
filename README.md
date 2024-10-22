@@ -37,10 +37,6 @@ The team decided to take the server offline temporarily so that the machine coul
 
 The next task was to quickly alert the managers about the problem by elaborating a report on the type of attack I discovered and how it was affecting the web server and employees.
 
-![Wireshark Report - SYN Flood Attack part 1](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%201.png)
-
-![Wireshark Report - SYN Flood Attack part 2](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%202.png)
-
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Report</p>
 
 <a href="https://drive.google.com/file/d/1NFUPLDN4hY7igV8MxEsnM2vxwRaUPtFc/view?usp=sharing" target="_blank">
@@ -155,6 +151,9 @@ A normal transaction between a website visitor and the web server would be like:
   </tr>
 </table>
 
+![Wireshark Report - SYN Flood Attack part 1](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%201.png)
+
+![Wireshark Report - SYN Flood Attack part 2](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%202.png)
 
 
 
