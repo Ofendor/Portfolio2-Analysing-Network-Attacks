@@ -44,6 +44,10 @@ The next task was to quickly alert the managers about the problem by elaborating
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Report</p>
 
 
+<a href="https://drive.google.com/file/d/1NFUPLDN4hY7igV8MxEsnM2vxwRaUPtFc/view?usp=sharing" target="_blank">
+  <img src="https://www.clipartmax.com/png/small/36-360030_pdf-clipart-free-download-clip-building-materials-symbol-pdf.png" alt="LinkedIn Badge" width="24" height="24" />
+</a>
+
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Key Takeaways</p>
 
 
