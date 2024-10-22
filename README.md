@@ -77,7 +77,59 @@ The third step finalises the Handshake. In this step, the source IP address send
   </tr>
 </table>
 A normal transaction between a website visitor and the web server would be like:
-![Normal TCP SYN Traffic](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Normal%20TCP%20SYN%20Protocol%20function%20explained.png)
+
+<p style="color: #1e203b; font-size: 16px; font-weight: bold;">Network Traffic Log</p>
+
+<table>
+  <tr>
+    <th style="text-align:left;">NO.</th>
+    <th style="text-align:left;">TIME</th>
+    <th style="text-align:left;">SOURCE</th>
+    <th style="text-align:left;">DESTINATION</th>
+    <th style="text-align:left;">PROTOCOL</th>
+    <th style="text-align:left;">INFO</th>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>3.144521</td>
+    <td>198.51.100.23</td>
+    <td>192.0.2.1</td>
+    <td>TCP</td>
+    <td>42584→443 [SYN] Seq=0 Win=5792 Len=120…</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>3.195755</td>
+    <td>198.51.100.23</td>
+    <td>192.1.2.1</td>
+    <td>TCP</td>
+    <td>443→42584 [SYN, ACK] Seq=0 Win=5792 Len=120…</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>3.246989</td>
+    <td>198.51.100.23</td>
+    <td>192.0.2.1</td>
+    <td>TCP</td>
+    <td>42584→443 [ACK] Seq=1 Win=5792 Len=120…</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>3.298223</td>
+    <td>198.51.100.23</td>
+    <td>192.0.2.1</td>
+    <td>HTTP</td>
+    <td>GET /sales.html HTTP/1.1</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>3.349457</td>
+    <td>192.0.2.1</td>
+    <td>198.51.100.23</td>
+    <td>HTTP</td>
+    <td>HTTP/1.1 200 OK (text/html)</td>
+  </tr>
+</table>
 
 <table>
   <tr>
@@ -94,10 +146,15 @@ The green coloured log entries show the responds to a normal visitor traffic, wh
 The next rows, the log begins to show the struggle the web service is having to keep up with the number of SYN requests coming in at a rapid pace, generating the following log errors:
 -- An getaway server message displaying: HTTP/1.1 504 Gateway Time-out (text/html). This error message is sent as a timeout error for the requesting browser. (check log 77)
 -- An [RST, ACK] packet, a ‘reset, acknowledge, packet that will show an error message in the browser, and will drop the connection. 
-
     </td>
   </tr>
-</table>.
+</table>
+
+
+
+
+
+
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Key Takeaways</p>
 
