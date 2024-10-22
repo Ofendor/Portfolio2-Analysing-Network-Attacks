@@ -32,6 +32,8 @@ In this scenario, working as a security analyst for a travel agency that adverti
 ![Wireshark Report - SYN Flood Attack](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack.png)
 
 The web server appears to be **overwhelmed** by the volume of incoming traffic and is losing its ability to respond to the abnormally large number of **SYN** **requests**. This gave me a clear clue that the server is under attack by a malicious actor.
+The team decides to take the server offline temporarily so the machine can recover and return to a normal operating status. We configured the copany's firewall to block the **IP** **address** that was sending the attack. We are concious that blocking that **IP** is a solution that won't last since the hacker can **spoof** *other** **IP** **addresses** to start a new attack. 
+The next task was to alert the managers about the problem quickly, elaborating a report about the type of attack I discovered and how it was affecting the web server and employees.
 ![Wireshark Report - SYN Flood Attack part 1](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%201.png)
 
 ![Wireshark Report - SYN Flood Attack part 2](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%202.png)
