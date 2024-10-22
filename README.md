@@ -64,7 +64,7 @@ The next task was to quickly alert the managers about the problem by elaborating
     <th style="text-align:left;"><strong>Website function explained</strong></th>
   </tr>
   <tr>
-    <td>When the website visitors try to establish a connection with the web server, there is a three-way handshake that occurs using the TCP Protocol. 
+    <td>When the website visitors try to establish a connection with the web server, there is a three-way **handshake** that occurs using the TCP Protocol. 
 The TCP Protocol is part of the Transport Layer in the TCP/ IP Model, and is in charge of all internet communications that allow two devices to form a connection and stream data. This protocol ensures that the data is reliable and it is transmitted to the destination service without any issues using the ‘Handshake’ process. This ‘Handshake’ consists of the following steps:
 From a source IP address, a user sends a request to access systems that possess a different destination IP address. The request consists of a data packet containing a flag called SYN (Synchronisation) located in the header, along with a sequence number that helps facilitate communication.
 After receiving the request, the destination IP address replies to the source IP address with another TCP packet carrying the SYN-ACK flag, acknowledging the connection and accepting the request to access the network. It also adds a number to the previous sequence to maintain a proper order during the communication exchange.
