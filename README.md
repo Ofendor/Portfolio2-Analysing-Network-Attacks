@@ -13,7 +13,7 @@
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Analysing Network Attacks</p>
 
-<pre><code style="color: #ff3f31;">Portfolio Activity 2 - TCP protocol and Wireshark log analysis</code></pre>
+<pre><code style="color: #ff3f31;">Portfolio Activity 2 - TCP protocol & SYN Handshake log analysis with Wireshark</code></pre>
 
 In this project, I used the information learned from known network attacks like **DoS Attack, DDoS, SYN Flood Attacks**, **Ping of Death**, and more. I also referenced material provided by:
 
