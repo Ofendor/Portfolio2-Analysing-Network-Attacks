@@ -33,8 +33,6 @@ In this scenario, working as a security analyst for a travel agency that adverti
 
 The web server appears to be **overwhelmed** by the volume of incoming traffic and is losing its ability to respond to the abnormally large number of **SYN** **requests**. This gave me a clear indication that the server is under attack by a malicious actor.
 
-The team decided to take the server offline temporarily so that the machine could recover and return to normal operating status. We configured the company's firewall to block the **IP** **address** that was sending the attack. We are conscious that blocking this **IP** is a temporary solution, as the hacker can **spoof** **other** **IP** **addresses** to initiate a new attack.
-
 The next task was to quickly alert the managers about the problem by elaborating a report on the type of attack I discovered and how it was affecting the web server and employees.
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Report</p>
