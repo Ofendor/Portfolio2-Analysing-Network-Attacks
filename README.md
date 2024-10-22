@@ -75,8 +75,7 @@ After receiving the request, the destination IP address replies to the source IP
 The third step finalises the Handshake. In this step, the source IP address sends another data packet back with an ACK flag, confirming that the TCP connection has been successfully established, allowing both systems to begin sending data packets reliably over the network.
     </td>
   </tr>
-</table>.
-
+</table>
 A normal transaction between a website visitor and the web server would be like:
 ![Normal TCP SYN Traffic](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Normal%20TCP%20SYN%20Protocol%20function%20explained.png)
 
