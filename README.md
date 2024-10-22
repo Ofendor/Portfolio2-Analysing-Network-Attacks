@@ -15,7 +15,7 @@
 
 <pre><code style="color: #ff3f31;">Portfolio Activity 2 - TCP protocol and Wireshark log analysis</code></pre>
 
-In this project, I used the information learned about common network attacks
+In this project, I used the information learned from known Network attacks like DoS Attack, DDos, SyN Flood Attacks, Ping oF Death and more. I also use references and material provided by CISA: Understanding and Responding to Distributed Denial-of-Service Attacks (2024), and NIST SP 800-61r3: Incident Response Recomendations and Considerations for Cybersecurity Risk Management [pages 21,29,33,39].  
 
 <p style="font-size: 12px; font-style: italic; color: #4a4a4a;">
   All portfolio items represent fictional companies, IP addresses, websites, and emails, used strictly for educational purposes; and provided hands-on experience in real-world cybersecurity practices.  
