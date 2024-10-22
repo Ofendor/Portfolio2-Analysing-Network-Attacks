@@ -27,11 +27,23 @@ Understanding how attacks impact networks from the target's perspective helped m
 </p>
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Activity Overview</p>
-In this scenario, working as a security analyst for a travel agency that advertises sales and promotions on the company's website, I receive an automated alert from a monitoring system (Wireshark) indicating a problem with the web server. I attempt to visit the company's website, but I get the message: "timeout error."
+In this scenario, working as a security analyst for a travel agency that advertises sales and promotions on the company's website, I receive an automated alert from a monitoring system (Wireshark) indicating a problem with the web server. I attempt to visit the company's website, but I get the message: "timeout error." After using a packet sniffer to capture data packets in transit to and from the web server, I noticed a large number of TCP SYN requests coming from an unfamiliar IP address.
 
-After using a packet sniffer to capture data packets in transit to and from the web server, I noticed a large number of TCP SYN requests coming from an unfamiliar IP address.
+| Color   | No. | Time      | Source          | Destination     | Protocol | Info                                                    |
+|---------|-----|-----------|------------------|------------------|----------|---------------------------------------------------------|
+| **red** | 52  | 3.390692  | 203.0.113.0     | 192.0.2.1        | TCP      | 54770->443 [SYN] Seq=0 Win=5792 Len=0...               |
+| **red** | 53  | 3.441926  | 192.0.2.1       | 203.0.113.0      | TCP      | 443->54770 [SYN, ACK] Seq=0 Win=5792 Len=120...        |
+| **red** | 54  | 3.493160  | 203.0.113.0     | 192.0.2.1        | TCP      | 54770->443 [ACK] Seq=1 Win=5792 Len=0...               |
+| **green** | 55 | 3.544394  | 198.51.100.14   | 192.0.2.1        | TCP      | 14785->443 [SYN] Seq=0 Win=5792 Len=120...             |
+| **green** | 56 | 3.599628  | 192.0.2.1       | 198.51.100.14    | TCP      | 443->14785 [SYN, ACK] Seq=0 Win=5792 Len=120...        |
+| **red** | 57  | 3.664863  | 203.0.113.0     | 192.0.2.1        | TCP      | 54770->443 [SYN] Seq=0 Win=5792 Len=0...               |
+| **green** | 58 | 3.730097  | 198.51.100.14   | 192.0.2.1        | TCP      | 14785->443 [ACK] Seq=1 Win=5792 Len=120...             |
+| **red** | 59  | 3.795332  | 203.0.113.0     | 192.0.2.1        | TCP      | 54770->443 [SYN] Seq=0 Win=5792 Len=120...             |
+| **green** | 60 | 3.860567  | 198.51.100.14   | 192.0.2.1        | HTTP     | GET /sales.html HTTP/1.1                                |
+| **red** | 61  | 3.939499  | 203.0.113.0     | 192.0.2.1        | TCP      | 54770->443 [SYN] Seq=0 Win=5792 Len=120...             |
+| **green** | 62 | 4.018431  | 192.0.2.1       | 198.51.100.14    | HTTP     | HTTP/1.1 200 OK (text/html)                             |
 
-![Wireshark packet sniffing report](https://drive.google.com/file/d/12OOEVq8iWR_AKGImSZYfR0N79asdwTir/view?usp=sharing)
+
 
 
 
