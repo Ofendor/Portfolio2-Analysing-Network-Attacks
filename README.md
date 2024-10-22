@@ -75,11 +75,30 @@ After receiving the request, the destination IP address replies to the source IP
 The third step finalises the Handshake. In this step, the source IP address sends another data packet back with an ACK flag, confirming that the TCP connection has been successfully established, allowing both systems to begin sending data packets reliably over the network.
     </td>
   </tr>
-</table>
+</table>.
 
+A normal transaction between a website visitor and the web server would be like:
 ![Normal TCP SYN Traffic](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Normal%20TCP%20SYN%20Protocol%20function%20explained.png)
 
+<table>
+  <tr>
+    <th style="text-align:left;"><strong>The Attack explained</strong></th>
+  </tr>
+  <tr>
+    <td>According to CISA, a DoS Attack involves a single source used to overwhelm the target system with a flood of traffic or resource-consuming requests. The malicious actor typically uses one computer or a small network to generate the attack. The goal is to render the target system unavailable to its intended users and deny access to resources or services.
+A malicious actor can take advantage of the TCP protocol by flooding a server with SYN requests for the first part of the handshake as shown in the Wireshark captures. If the number of SYN packets is greater than the server resources available to handle them, the server will become overwhelmed and unable to respond. 
+This is a Protocol-Based Attack, also known as SYN Flooding Attack, that exploits vulnerabilities in the network protocols to disrupt their targets. These types of attacks normally target the bandwidth of the Network Layer from the TCP/ IP Domain and the Transport Layer in the OSI Model.
+The interactions with the attacker’s IP 203.0.113.0 address are shown in red in the Wireshark graphic. 
+Initially, the SYN requests are answered normally by the web server (log items 52-54). However, the attacker continues sending SYN requests, creating an abnormal environment for the network. 
 
+The green coloured log entries show the responds to a normal visitor traffic, which means that till this point the server still capable of manage its bandwidth and provide access to the network to the source IP address 198.51.100.14 (check log items 55, 56, 58, 60, 62 in the graphic).
+The next rows, the log begins to show the struggle the web service is having to keep up with the number of SYN requests coming in at a rapid pace, generating the following log errors:
+-- An getaway server message displaying: HTTP/1.1 504 Gateway Time-out (text/html). This error message is sent as a timeout error for the requesting browser. (check log 77)
+-- An [RST, ACK] packet, a ‘reset, acknowledge, packet that will show an error message in the browser, and will drop the connection. 
+
+    </td>
+  </tr>
+</table>.
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Key Takeaways</p>
 
