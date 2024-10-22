@@ -133,22 +133,28 @@ A normal transaction between a website visitor and the web server would be like:
 
 <table>
   <tr>
-    <th style="text-align:left;"><strong>The Attack explained</strong></th>
+    <th style="text-align:left;"><strong>The Attack Explained</strong></th>
   </tr>
   <tr>
-    <td>According to CISA, a DoS Attack involves a single source used to overwhelm the target system with a flood of traffic or resource-consuming requests. The malicious actor typically uses one computer or a small network to generate the attack. The goal is to render the target system unavailable to its intended users and deny access to resources or services.
-A malicious actor can take advantage of the TCP protocol by flooding a server with SYN requests for the first part of the handshake as shown in the Wireshark captures. If the number of SYN packets is greater than the server resources available to handle them, the server will become overwhelmed and unable to respond. 
-This is a Protocol-Based Attack, also known as SYN Flooding Attack, that exploits vulnerabilities in the network protocols to disrupt their targets. These types of attacks normally target the bandwidth of the Network Layer from the TCP/ IP Domain and the Transport Layer in the OSI Model.
-The interactions with the attacker’s IP 203.0.113.0 address are shown in red in the Wireshark graphic. 
-Initially, the SYN requests are answered normally by the web server (log items 52-54). However, the attacker continues sending SYN requests, creating an abnormal environment for the network. 
-
-The green coloured log entries show the responds to a normal visitor traffic, which means that till this point the server still capable of manage its bandwidth and provide access to the network to the source IP address 198.51.100.14 (check log items 55, 56, 58, 60, 62 in the graphic).
-The next rows, the log begins to show the struggle the web service is having to keep up with the number of SYN requests coming in at a rapid pace, generating the following log errors:
--- An getaway server message displaying: HTTP/1.1 504 Gateway Time-out (text/html). This error message is sent as a timeout error for the requesting browser. (check log 77)
--- An [RST, ACK] packet, a ‘reset, acknowledge, packet that will show an error message in the browser, and will drop the connection. 
+    <td>
+      According to CISA, a DoS Attack involves a single source used to overwhelm the target system with a flood of traffic or resource-consuming requests. 
+      The malicious actor typically uses one computer or a small network to generate the attack. The goal is to render the target system unavailable to its intended users and deny access to resources or services.<br><br>
+      A malicious actor can take advantage of the TCP protocol by flooding a server with SYN requests for the first part of the handshake, as shown in the Wireshark captures. 
+      If the number of SYN packets is greater than the server resources available to handle them, the server will become overwhelmed and unable to respond. 
+      This is a Protocol-Based Attack, also known as a SYN Flooding Attack, that exploits vulnerabilities in the network protocols to disrupt their targets. 
+      These types of attacks normally target the bandwidth of the Network Layer from the TCP/IP Domain and the Transport Layer in the OSI Model.<br><br>
+      The interactions with the attacker’s IP address 203.0.113.0 are shown in red in the Wireshark graphic. 
+      Initially, the SYN requests are answered normally by the web server (log items 52-54). However, the attacker continues sending SYN requests, creating an abnormal environment for the network.<br><br>
+      The green colored log entries show the responses to normal visitor traffic, which means that until this point the server is still capable of managing its bandwidth and providing access to the network for the source IP address 198.51.100.14 (check log items 55, 56, 58, 60, 62 in the graphic). 
+      In the next rows, the log begins to show the struggles the web service is having to keep up with the number of SYN requests coming in at a rapid pace, generating the following log errors:<br>
+      <ul>
+        <li>An getaway server message displaying: HTTP/1.1 504 Gateway Time-out (text/html). This error message is sent as a timeout error for the requesting browser. (check log 77)</li>
+        <li>An [RST, ACK] packet, a ‘reset, acknowledge’ packet that will show an error message in the browser and will drop the connection.</li>
+      </ul>
     </td>
   </tr>
 </table>
+
 
 
 
