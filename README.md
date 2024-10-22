@@ -43,10 +43,18 @@ The next task was to quickly alert the managers about the problem by elaborating
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Report</p>
 
-
 <a href="https://drive.google.com/file/d/1NFUPLDN4hY7igV8MxEsnM2vxwRaUPtFc/view?usp=sharing" target="_blank">
   <img src="https://www.clipartmax.com/png/small/36-360030_pdf-clipart-free-download-clip-building-materials-symbol-pdf.png" alt="LinkedIn Badge" width="24" height="24" />
 </a>
+
+| **Summary of the Problem** |
+|-------------------------------------------------------------|
+| Today, we intercepted an alert from our traffic monitoring systems indicating a potential **DoS attack**. We filtered some of the data logs provided by **Wireshark** and discovered the reasons why the systems weren’t responding smoothly.  
+After further investigation, the team concluded that the issues were linked to a **foreign IP address** that had been sending **SYN packet requests**, overwhelming our company’s network. I attempted to visit the company’s website, but my request was denied with the message **“timeout error”**.  
+The team decided to take the server offline temporarily so the machine could recover and return to normal operating status. We configured the company's firewall to block the IP address that was sending the attack.  
+We are aware that blocking this IP is a temporary solution, as the hacker could employ different techniques, such as **spoofing other IP addresses**, to initiate a new attack.  
+**Note**: Network interception attacks work by intercepting network traffic and stealing valuable information or interfering with transmissions, causing extensive damage to a company’s assets. |
+
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Key Takeaways</p>
 
