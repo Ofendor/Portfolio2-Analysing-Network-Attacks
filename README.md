@@ -182,12 +182,12 @@ A normal transaction between a website visitor and the web server would be like:
   <li><strong>Backup and Recovery</strong>: Regular backups are critical in case of a disaster recovery plan to recover quickly after an attack and minimise potential data loss.</li>
 </ul>
 
-
-
-
-
-
-
+<p style="color: #1e203b; font-size: 16px; font-weight: bold;">Conclusion</p>
+<p>
+  In response to today's <strong>DoS attack</strong>, our network analyzers (<strong>Wireshark</strong>) identified traffic anomalies linked to an <strong>unknown IP address</strong>, causing customer service disruptions. As a result, a <strong>SYN flood attack</strong> overwhelmed the company’s network. The temporary solution of configuring the <strong>Firewall</strong> to block the IP address allowed the server to recover, but it is critical that we implement immediate and robust defensive measures to prevent future incidents.<br>
+  Moving forward, strategies such as proper <strong>firewall configuration</strong>, <strong>employee training</strong>, regular <strong>backups</strong>, and a comprehensive <strong>incident response plan</strong> are critical to safeguarding information and ensuring availability against future attacks.<br>
+  We recommend conducting a <strong>post-incident analysis</strong> to patch vulnerabilities and strengthen resilience against <strong>TCP protocol exploitation</strong> and other similar cyber threats.
+</p>
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Key Takeaways</p>
 
