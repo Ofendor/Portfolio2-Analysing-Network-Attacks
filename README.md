@@ -75,57 +75,7 @@ The third step finalises the Handshake. In this step, the source IP address send
 A normal transaction between a website visitor and the web server would be like:
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Network Traffic Log</p>
-
-<table>
-  <tr>
-    <th style="text-align:left;">NO.</th>
-    <th style="text-align:left;">TIME</th>
-    <th style="text-align:left;">SOURCE</th>
-    <th style="text-align:left;">DESTINATION</th>
-    <th style="text-align:left;">PROTOCOL</th>
-    <th style="text-align:left;">INFO</th>
-  </tr>
-  <tr>
-    <td>47</td>
-    <td>3.144521</td>
-    <td>198.51.100.23</td>
-    <td>192.0.2.1</td>
-    <td>TCP</td>
-    <td>42584→443 [SYN] Seq=0 Win=5792 Len=120…</td>
-  </tr>
-  <tr>
-    <td>48</td>
-    <td>3.195755</td>
-    <td>198.51.100.23</td>
-    <td>192.1.2.1</td>
-    <td>TCP</td>
-    <td>443→42584 [SYN, ACK] Seq=0 Win=5792 Len=120…</td>
-  </tr>
-  <tr>
-    <td>49</td>
-    <td>3.246989</td>
-    <td>198.51.100.23</td>
-    <td>192.0.2.1</td>
-    <td>TCP</td>
-    <td>42584→443 [ACK] Seq=1 Win=5792 Len=120…</td>
-  </tr>
-  <tr>
-    <td>50</td>
-    <td>3.298223</td>
-    <td>198.51.100.23</td>
-    <td>192.0.2.1</td>
-    <td>HTTP</td>
-    <td>GET /sales.html HTTP/1.1</td>
-  </tr>
-  <tr>
-    <td>51</td>
-    <td>3.349457</td>
-    <td>192.0.2.1</td>
-    <td>198.51.100.23</td>
-    <td>HTTP</td>
-    <td>HTTP/1.1 200 OK (text/html)</td>
-  </tr>
-</table>
+![Normal traffic on a TCP SYN-AKL request](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Normal%20TCP%20SYN%20Protocol%20function%20explained.png)
 
 <table>
   <tr>
