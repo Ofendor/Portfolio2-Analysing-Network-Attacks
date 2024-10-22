@@ -27,9 +27,12 @@ Understanding how attacks impact networks from the target's perspective helped m
 </p>
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Activity Overview</p>
-In this scenario, working as a security analyst for a travel agency that advertises sales and promotions on the company's website, I receive and automated alert from a monitoring system (Wireshark) indicating a problem with the web server. I attempt to visit the company's website, but I get the message: "timeout error".
-After using a packet sniffer to capture data packets in transit to and from the web server, I noticed a large number of TCP SYN requests coming from an unfamiliar IP address. 
+In this scenario, working as a security analyst for a travel agency that advertises sales and promotions on the company's website, I receive an automated alert from a monitoring system (Wireshark) indicating a problem with the web server. I attempt to visit the company's website, but I get the message: "timeout error."
+
+After using a packet sniffer to capture data packets in transit to and from the web server, I noticed a large number of TCP SYN requests coming from an unfamiliar IP address.
+
 ![Wireshark packet sniffing report](https://drive.google.com/file/d/12OOEVq8iWR_AKGImSZYfR0N79asdwTir/view?usp=sharing)
+
 
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Report</p>
