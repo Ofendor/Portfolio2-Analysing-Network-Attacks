@@ -30,6 +30,8 @@ Understanding how attacks impact networks from the target's perspective helped m
 In this scenario, working as a security analyst for a travel agency that advertises sales and promotions on the company's website, I receive an automated alert from a monitoring system (Wireshark) indicating a problem with the web server. I attempt to visit the company's website, but I get the message: "timeout error." After using a packet sniffer to capture data packets in transit to and from the web server, I noticed a large number of TCP SYN requests coming from an unfamiliar IP address.
 
 ![Wireshark Report - SYN Flood Attack](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack.png)
+![Wireshark Report - SYN Flood Attack part 1]()
+![Wireshark Report - SYN Flood Attack part 2]()
 
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Report</p>
