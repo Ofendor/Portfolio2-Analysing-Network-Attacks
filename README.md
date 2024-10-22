@@ -77,6 +77,8 @@ The third step finalises the Handshake. In this step, the source IP address send
   </tr>
 </table>
 
+![Normal TCP SYN Traffic](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Normal%20TCP%20SYN%20Protocol%20function%20explained.png)
+
 
 
 <p style="color: #1e203b; font-size: 16px; font-weight: bold;">Key Takeaways</p>
