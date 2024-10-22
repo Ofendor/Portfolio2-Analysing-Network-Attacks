@@ -155,6 +155,34 @@ A normal transaction between a website visitor and the web server would be like:
 
 ![Wireshark Report - SYN Flood Attack part 2](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%202.png)
 
+<p style="color: #1e203b; font-size: 16px; font-weight: bold;">Steps to Follow</p>
+<p>
+  In the event of an issue of this magnitude, there are a series of steps that the organisation should take both during and before the attack to demonstrate its resilience.<br>
+  During a DoS attack, we have to focus on how to respond. According to NIST and their Incident Response Recommendations and Considerations for Cybersecurity Risk Management, the main steps to consider are:
+</p>
+<ul>
+  <li><strong>Identify the Attack as soon as possible</strong>: Observe the behaviour of the network and alert the abnormalities shown by traffic analysers to confirm the attack.</li>
+  <li><strong>Activate Incident Response Plan if any</strong>: The organisation’s plan will outline the roles and responsibilities of key personnel and communications during the event of an attack.</li>
+  <li><strong>Gather Evidence</strong>: Collecting and documenting as much information as possible about the attack will provide useful evidence for reporting the incident to law enforcement or future analysis.</li>
+  <li><strong>Implement Traffic Filtering</strong>: Configure the network structure, firewalls, or IDS to filter out malicious traffic.</li>
+  <li><strong>Communication</strong>: Communication internally and externally is essential to maintain a clear report to key stakeholders, including employees, customers, vendors, etc.</li>
+  <li><strong>Learn from the Attack</strong>: After the situation is resolved, conduct a deep post-incident analysis to understand the attack vectors, patch the affected systems, expose the current vulnerabilities, and learn our lessons. With this information, update whatever is necessary, patch the respective systems to prevent future attacks and strengthen the company’s cybersecurity mindset.</li>
+</ul>
+<p>
+  Since the organisation can’t predict when a DoS attack will occur, it is imperative that our network defenders implement best practices to minimise the potential damage of these types of attacks:
+</p>
+<ul>
+  <li><strong>Risk Assessment</strong>: A proactive approach for risk assessments to determine the vulnerabilities of the organisation and identify the weak points and the potential impact a cyber attack can provoke.</li>
+  <li><strong>Network Monitoring and Traffic Analysis</strong>: Tools and Intrusion Detection Systems to identify any abnormality or suspicious traffic patterns.</li>
+  <li><strong>Captcha</strong>: Integrating captchas into a website or online service will help differentiate between human users and automated bots.</li>
+  <li><strong>Incident Response Plan</strong>: A comprehensive plan to outline steps to be taken in the event of a DoS attack will ensure effective mitigation of the problem using the correct strategies.</li>
+  <li><strong>Firewall Configuration</strong>: To filter out suspicious traffic patterns and block traffic from unknown IP addresses. Also, consider implementing rate limitations to prevent overwhelming traffic.</li>
+  <li><strong>Patch and Update Systems</strong></li>
+  <li><strong>Employee Awareness and Training</strong>: Educating employees about DoS attacks is beneficial for the company, as it helps maintain service availability during an attack.</li>
+  <li><strong>Backup and Recovery</strong>: Regular backups are critical in case of a disaster recovery plan to recover quickly after an attack and minimise potential data loss.</li>
+</ul>
+
+
 
 
 
