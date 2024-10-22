@@ -31,6 +31,7 @@ In this scenario, working as a security analyst for a travel agency that adverti
 
 ![Wireshark Report - SYN Flood Attack](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack.png)
 
+The web server appears to be **overwhelmed** by the volume of incoming traffic and is losing its ability to respond to the abnormally large number of **SYN** **requests**. This gave me a clear clue that the server is under attack by a malicious actor.
 ![Wireshark Report - SYN Flood Attack part 1](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%201.png)
 
 ![Wireshark Report - SYN Flood Attack part 2](https://raw.githubusercontent.com/Ofendor/Portfolio2-Analysing-Network-Attacks/refs/heads/main/Wireshark%20report%20-%20SyN%20Flood%20Attack%20part%202.png)
